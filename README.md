@@ -26,9 +26,7 @@ Since the first (LSB) flip-flop needs to toggle at every clock pulse, its J and 
 The next flip-flop need only “recognize” that the first flip-flop’s Q output is high to be made ready to toggle, so no AND gate is needed.
 However, the remaining flip-flops should be made ready to toggle only when all lower-order output bits are “high,” thus the need for AND gates.
 
-**Procedure**
 
-/* write all the steps invloved */
 
 
 **PROGRAM**
@@ -36,10 +34,9 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 /* Program for flipflops and verify its truth table in quartus using Verilog programming. 
 
-````
-Developed by:R.Dhivya
-RegisterNumber:212225040076
-
+Developed by:s.udhaya
+RegisterNumber:212225230287
+~~~ python
 module up(out,clk,rstn);
 input clk,rstn;
 output reg [3:0]out;
@@ -51,7 +48,7 @@ else
 out <= out+1;
 end
 endmodule
-````
+~~~
 
 **RTL LOGIC UP COUNTER**
 
